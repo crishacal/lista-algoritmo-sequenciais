@@ -1,20 +1,13 @@
-// Exercicio 10 - Quatro operações aritméticas
+// Exercicio 11 - Calcula o volume de uma esfera
 
-let A = parseInt(prompt("Entre com primeiro valor: "));
-let B = parseInt(prompt("Entre com o segundo valor: "));
+let raio = parseFloat(prompt("Entre com o valor do raio: "));
 
-if (isNaN(A) || isNaN(B)) {
-    alert("Entre com valores válidos");
+if (isNaN(raio)) {
+    alert("Entre com valor numérico.");
+} else if (raio <= 0) {
+    alert("Entre com valor maior que zero.")
 } else {
-    let soma = A + B;
-    let subtracao = A - B;
-    let divisao = A / B;
-    let multi = A * B;
-
-    alert(
-        `Soma: ${soma}\n` +
-        `Subtração: ${subtracao}\n` +
-        `Divisão: ${divisao}\n` +
-        `Multiplicação: ${multi}`
-    );
+    let volume = (4/3) * 3.14159 * Math.pow(raio, 3);
+    
+    alert(`O valume da esfera é de ${volume.toFixed(2)} unidades cúbicas.`);
 }
