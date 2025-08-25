@@ -14,12 +14,7 @@ let A = parseInt(prompt("Entre com valor de A: "));
 let B = parseInt(prompt("Entre com valor de B: "));
 let C = parseInt(prompt("Entre com valor de C: "));
 
-if (isNaN(A) || isNaN(B) || isNaN(C)){
-    alert("Entre com valores válidos.");
-    return;
-}
-
 let soma = A + B + C;
 let quadrado = soma * soma;
 
-alert(`O quadrado da soma é ${quadrado}`);
+alert(`O quadrado da soma de ${A} + ${B} + ${C} é ${quadrado}`);
