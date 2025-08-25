@@ -1,8 +1,20 @@
 // Exercicio 10 - Quatro operações aritméticas
 
-let dolar = parseFloat(prompt("Valor em dolar (US$): "));
-let cotacao = parseFloat(prompt("Cotação em real (R$): "));
+let A = parseInt(prompt("Entre com primeiro valor: "));
+let B = parseInt(prompt("Entre com o segundo valor: "));
 
-let real = dolar * cotacao;
+if (isNaN(A) || isNaN(B)) {
+    alert("Entre com valores válidos");
+} else {
+    let soma = A + B;
+    let subtracao = A - B;
+    let divisao = A / B;
+    let multi = A * B;
 
-alert(`O valor em real é R$ ${real.toFixed(2)}`);
+    alert(
+        `Soma: ${soma}\n` +
+        `Subtração: ${subtracao}\n` +
+        `Divisão: ${divisao}\n` +
+        `Multiplicação: ${multi}`
+    );
+}
