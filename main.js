@@ -22,4 +22,4 @@ if (isNaN(A) || isNaN(B) || isNaN(C)){
 let soma = A + B + C;
 let quadrado = soma * soma;
 
-alert(`O quadrado da soma de ${A} + ${B} + ${C} é ${quadrado}`);
+alert(`O quadrado da soma é ${quadrado}`);
