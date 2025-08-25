@@ -1,4 +1,4 @@
-// Exercicio 8 - Converção para dolar
+// Exercicio 10 - Quatro operações aritméticas
 
 let dolar = parseFloat(prompt("Valor em dolar (US$): "));
 let cotacao = parseFloat(prompt("Cotação em real (R$): "));
